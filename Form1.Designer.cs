@@ -34,6 +34,7 @@
             this.login = new System.Windows.Forms.Button();
             this.email_textbox = new System.Windows.Forms.TextBox();
             this.password_textbox = new System.Windows.Forms.TextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // username
@@ -61,12 +62,12 @@
             // fpass
             // 
             this.fpass.AutoSize = true;
-            this.fpass.Location = new System.Drawing.Point(218, 253);
+            this.fpass.Location = new System.Drawing.Point(90, 256);
             this.fpass.Name = "fpass";
-            this.fpass.Size = new System.Drawing.Size(129, 20);
+            this.fpass.Size = new System.Drawing.Size(138, 20);
             this.fpass.TabIndex = 3;
             this.fpass.TabStop = true;
-            this.fpass.Text = "Forget Password";
+            this.fpass.Text = "Change Password";
             this.fpass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.fpass_LinkClicked);
             // 
             // login
@@ -100,12 +101,24 @@
             this.password_textbox.UseSystemPasswordChar = true;
             this.password_textbox.TextChanged += new System.EventHandler(this.password_textbox_TextChanged);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(293, 256);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(129, 20);
+            this.linkLabel1.TabIndex = 7;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Forget Password";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // LOGINPAGE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(524, 332);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.password_textbox);
             this.Controls.Add(this.email_textbox);
             this.Controls.Add(this.login);
@@ -128,6 +141,7 @@
         private System.Windows.Forms.Button login;
         private System.Windows.Forms.TextBox email_textbox;
         private System.Windows.Forms.TextBox password_textbox;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

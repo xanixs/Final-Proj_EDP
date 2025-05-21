@@ -106,5 +106,11 @@ namespace EDP
             Form2 forgotForm = new Form2();
             forgotForm.Show();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form14 form14 = new Form14(); // Create an instance of Form14
+            form14.Show();
+        }
     }
  }

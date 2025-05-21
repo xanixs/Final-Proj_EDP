@@ -95,7 +95,8 @@ namespace EDP
 
         private void Cancel_Click(object sender, EventArgs e)
         {
-
+            LOGINPAGE form = new LOGINPAGE();
+            form.Show();
         }
     }
 }
